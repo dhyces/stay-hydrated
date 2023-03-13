@@ -3,9 +3,9 @@ loaderVersion="[44,)"
 license="MIT"
 #issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
 [[mods]]
-modId="multiloader"
+modId="stayhydrated"
 version="${file.jarVersion}"
-displayName="Example Mod"
+displayName="Stay Hydrated"
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
 logoFile="icon.png"
 credits=""
@@ -13,13 +13,13 @@ authors="Dhyces"
 description='''
 
 '''
-[[dependencies.multiloader]]
+[[dependencies.stayhydrated]]
     modId="forge"
     mandatory=true
     versionRange="[44,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.multiloader]]
+[[dependencies.stayhydrated]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.19.3,1.20)"

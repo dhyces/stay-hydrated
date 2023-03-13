@@ -1,0 +1,20 @@
+{
+    replace: false,
+    values: {
+        // This only works with registered item ids. Tags are not accepted and will not be
+        "minecraft:potion": {
+            // Optional element. Default is true. Whether the value must exist or not. If it is optional, the value simply will not exist if the item does not exist in registry
+            required: false,
+            // Optional element. Defaults to empty (all nbt matches). Nbt of the item
+            nbt: {
+                Potion: "minecraft:water"
+            },
+            // The value to restore to thirst after it's drunk. CAN BE NEGATIVE AND WILL CAUSE THIRST WHEN CONSUMED
+            value: 2,
+            // Optional element. Default is false. Identifies an aspect to remove from packs labeled before it
+            remove: false
+        },
+        // Also works as key -> value if nothing else is required
+        "minecraft:apple": 1
+    }
+}

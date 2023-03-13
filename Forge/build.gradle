@@ -75,8 +75,8 @@ dependencies {
 }
 
 mixin {
-    add sourceSets.main, 'contextually.refmap.json'
-    config 'contextually.mixins.json'
+//    add sourceSets.main, 'contextually.refmap.json'
+//    config 'contextually.mixins.json'
 
     debug.verbose = true
     debug.export = true

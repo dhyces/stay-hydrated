@@ -1,15 +1,16 @@
 {
     "required": true,
     "minVersion": "0.8",
-    "package": "com.example.examplemod.mixin",
+    "package": "dhyces.stayhydrated.mixin",
     "compatibilityLevel": "JAVA_17",
     "mixins": [
+        "PlayerMixin"
     ],
     "client": [
-      "ExampleMixin"
+        "client.GuiMixin"
     ],
     "injectors": {
-      "defaultRequire": 1
+        "defaultRequire": 1
     }
   }
   

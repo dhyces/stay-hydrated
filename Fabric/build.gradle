@@ -25,6 +25,7 @@ loom {
             setConfigName("Fabric Client")
             ideConfigGenerated(true)
             runDir("run")
+            property "mixin.debug.export", "true"
         }
         server {
             server()
@@ -35,6 +36,24 @@ loom {
     }
 }
 
+repositories {
+    maven {
+        name = 'Ladysnake Mods'
+        url = 'https://ladysnake.jfrog.io/artifactory/mods'
+    }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${cardinal_components}"
+    modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${cardinal_components}"
+    include "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${cardinal_components}"
+    include "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${cardinal_components}"
+
+    implementation "com.github.LlamaLad7:MixinExtras:0.1.1"
+    include "com.github.LlamaLad7:MixinExtras:0.1.1"
+    annotationProcessor("com.github.LlamaLad7:MixinExtras:0.1.1")
+}
 
 processResources {
     from project(":Common").sourceSets.main.resources

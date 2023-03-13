@@ -1,0 +1,8 @@
+{
+    // The amount of thirst that players have. Default is 20. For every two, there is one bar. That is, 20 = 10 bars, each with 2 thirst stages
+    totalThirst: 20,
+    // Determines whether natural water is dirty or not. Default is false. If it is true, you must boil dirty water to make it safe
+    isDirtyWater: false,
+    // Determines the level which exhaustion is inflicted on the player, which reduces dig speed. Default is 4.
+    exhaustionPoint: 4
+}

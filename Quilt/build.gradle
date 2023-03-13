@@ -4,16 +4,6 @@ plugins {
 
 archivesBaseName = "${mod_id}-Quilt"
 
-sourceSets {
-    main {
-        resources {
-            srcDirs += [
-                    "$rootDir/Common/src/main/resources"
-            ]
-        }
-    }
-}
-
 loom {
     runs {
         client {
